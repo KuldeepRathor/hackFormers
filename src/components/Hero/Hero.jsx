@@ -1,4 +1,4 @@
-import Card from "../ui/Card";
+import Card from "../../ui/Card";
 import "./Hero.css";
 
 export default function Hero() {

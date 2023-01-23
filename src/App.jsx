@@ -1,9 +1,9 @@
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Schedule from "./components/Schedule";
-import Prizes from "./components/Prizes";
-import Sponsors from "./components/Sponsors";
-import Faq from "./components/Faq";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Schedule from "./components/Schedule/Schedule";
+import Prizes from "./components/Prizes/Prizes";
+import Sponsors from "./components/Sponsors/Sponsors";
+import Faq from "./components/Faq/Faq";
 
 function App() {
   return (
