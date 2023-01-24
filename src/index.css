@@ -3,8 +3,8 @@
   padding:0;
 }
 body{
-  /* background-image: url("./assets/bgimg.jpeg");
-  background-size: repeat;
-  z-index:-1; */
-  background-color: #333;
+  background-image: url("./assets/bgImg.jpeg");
+  background-size:repeat;
+  z-index:-1;
+  /* font-family: 'JetBrains Mono', monospace; */
 }

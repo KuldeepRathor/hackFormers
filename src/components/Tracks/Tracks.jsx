@@ -1,12 +1,12 @@
 import Card from "../../ui/Card";
-import "./Hero.css";
+import "./Tracks.css";
 
-export default function Hero() {
+export default function Tracks() {
   return (
     <Card>
       <div className="title_container">
         <img src="src\assets\sword.png" alt="" />
-        <h1>Hero Section</h1>
+        <h1>Tracks</h1>
       </div>
     </Card>
   );

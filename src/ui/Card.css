@@ -1,6 +1,6 @@
 .card{
-    height:100vh;
-    max-width: min(90%,1040px);
+    height:1023px;
+    max-width: min(90%,1512px);
     margin-inline:auto;
     margin-bottom:2rem;
 }
