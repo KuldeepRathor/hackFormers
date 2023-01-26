@@ -5,6 +5,6 @@
 body{
   background-image: url("./assets/bgImg.jpeg");
   background-size:repeat;
-  z-index:-1;
+  /* border:1px solid red; */
   /* font-family: 'JetBrains Mono', monospace; */
 }
