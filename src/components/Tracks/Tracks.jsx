@@ -26,19 +26,13 @@ function flipFunction(){
               <img className="svg" src="src\assets\sword.png" alt="" />
             </div>
 
-            <div className="topic">AI & ML</div>
+            <div className="topic">Web / App Dev</div>
             
             <div className="content">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Develop Mobile/Web apps featuring the world of Transformers.
             </div>
 
-            <div className="back-content">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </div>
+           
           </div>
 
           
@@ -48,16 +42,16 @@ function flipFunction(){
               <img className="svg" src="src\assets\sword.png" alt="" />
             </div>
 
-            <div className="topic">AI & ML</div>
+            <div className="topic">AI & ML </div>
 
             <div className="content">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Use cutting-edge AI
+            and ML technologies
+            to create a new generation of transformers
             </div>
           </div>
 
-          <div className="boxes">
+          {/* <div className="boxes">
           <div className="svgHolder">
               <img className="svg" src="src\assets\sword.png" alt="" />
             </div>
@@ -69,7 +63,7 @@ function flipFunction(){
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </div>
-          </div>
+          </div> */}
         </div>
        
         
@@ -81,11 +75,9 @@ function flipFunction(){
               <img className="svg" src="src\assets\sword.png" alt="" />
             </div>
        <div className="flip-content"  onMouseOver="flipFunction">
-            <div className="topic">AI & ML</div>
+            <div className="topic">WEB 3.0</div>
         <div className="content">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-          amet sint. Velit officia consequat duis enim velit mollit.
-          Exercitation veniam consequat sunt nostrud amet.
+        Explore the potential of Blockchain technology to bring transformers to the next level
         </div>
         </div>
            
@@ -97,28 +89,14 @@ function flipFunction(){
               <img className="svg" src="src\assets\sword.png" alt="" />
             </div>
 
-            <div className="topic">AI & ML</div>
+            <div className="topic">Game (AR/VR)</div>
 
             <div className="content">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Immerse yourself in the world of transformers by creating Games(AR/VR)
             </div>
           </div>
 
-          <div className="boxes">
-          <div className="svgHolder">
-              <img className="svg" src="src\assets\sword.png" alt="" />
-            </div>
-
-            <div className="topic">AI & ML</div>
-
-            <div className="content">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </div>
-          </div>
+          
         </div>
 
 {/* w3schools */}
