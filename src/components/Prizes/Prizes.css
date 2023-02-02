@@ -1,3 +1,110 @@
-h1{
-    color:white;
+.meta i {
+  font-size: 1.1rem;
+  color: #e7e7e7;
+  text-shadow: 2.02971px 2.02971px 20.2971px rgba(255, 255, 255, 0.5);
+  font-family: "JetBrains Mono", monospace;
 }
+
+.prizes_container {
+  display: flex;
+  flex-direction: column;
+}
+.prize_container {
+  background: #000000;
+  border-width: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-image: linear-gradient(
+      45deg,
+      rgba(32, 100, 218, 1),
+      rgba(138, 177, 244, 1),
+      rgba(255, 190, 157, 1),
+      rgba(231, 52, 39, 1)
+    )
+    1;
+  height: 200px;
+  border-radius: 20px;
+  padding: 48px 24px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 1200ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.prize_container:hover {
+  transform: rotateY(360deg);
+  background-color: black;
+  cursor: pointer;
+}
+
+.image {
+  height: 100px;
+  display: flex;
+}
+
+.temp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.prizemoney {
+  color: #e7e7e7;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.winner {
+  color: #e7e7e7;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.heading {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 74px;
+  text-transform: uppercase;
+}
+
+.title_container img {
+  height: 3rem;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .temp {
+    display: flex;
+    flex-direction: column;
+  }
+  .prize_container {
+    width: 85%;
+  }
+  .prizemoney {
+    font-size: 32px;
+  }
+  .winner {
+    font-size: 30px;
+  }
+}
+
+.prize-top {
+  display: flex;
+  align-items: center;
+}
+

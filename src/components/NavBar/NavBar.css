@@ -1,0 +1,96 @@
+.nav_container {
+  position: fixed;
+  top: 2rem;
+  width: 1512px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.nav {
+  width: 88%;
+  padding: 16px;
+  margin-inline: auto;
+  background: rgba(7, 5, 7, 0.04);
+  backdrop-filter: blur(30px);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.nav_list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav_list_items {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 16px;
+  padding-block: 8px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono", monospace;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+}
+.nav_list_items:hover {
+  cursor: pointer;
+}
+.nav_list_items .active {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #2064da, #e73427) 1;
+}
+
+.hid {
+  display: none;
+}
+.nav_brand img {
+  height: 2rem;
+}
+.hamburger {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  padding-inline: 1rem;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav_brand {
+    display: none;
+  }
+  .nav_container {
+    top: 0;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav_list {
+    display: none;
+  }
+  .show {
+    display: flex;
+    position: fixed;
+    inset: 0 0 0 25%;
+    background-color: rgba(0, 0, 0, 1);
+    flex-direction: column;
+    height: 100vh;
+    z-index: -1;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 1rem;
+  }
+}

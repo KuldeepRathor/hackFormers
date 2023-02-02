@@ -1,10 +1,22 @@
-*,::before,::after{
-  margin:0;
-  padding:0;
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
 }
-body{
-  background-image: url("./assets/bgImg.jpeg");
-  background-size:repeat;
-  z-index:-1;
+body {
+  /* background-image: url("./assets/Avalon-Background.png"); */
+  /* background-size: contain; */
+  /* background-repeat: repeat; */
+  overflow-x: hidden;
   /* font-family: 'JetBrains Mono', monospace; */
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+  border-radius: 12px;
+  background-color: rgb(0, 0, 12);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(168 162 158);
+  border-radius: 20px;
 }

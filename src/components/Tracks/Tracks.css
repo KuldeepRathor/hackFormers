@@ -1,13 +1,101 @@
-.title_container{
-    display:flex;
-    align-items: center;
-    margin-top:1.5rem;
+@media screen and (max-width: 480px) {
+  .topic {
+    font-family: JetBrains Mono;
+    font-size: 10px;
+    color: white;
     font-weight: 700;
-    text-shadow: 2.02971px 2.02971px 20.2971px rgba(255, 255, 255, 0.5);
-    font-family: 'JetBrains Mono', monospace;
-    text-transform: uppercase;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
 }
-.title_container img{
-    height:3rem;
-    object-fit: cover;
+.tracks_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+.first-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2,1fr); */
+  width: 100%;
+  column-gap: 1rem;
+  justify-content: space-evenly;
+}
+/* .span{
+  grid-column: 1/4;
+  width:40%;
+  margin-inline:auto;
+} */
+.boxes {
+  background: rgba(0, 0, 0, 0.5);
+  border-width: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-image: linear-gradient(
+      45deg,
+      rgba(32, 100, 218, 1),
+      rgba(138, 177, 244, 1),
+      rgba(255, 190, 157, 1),
+      rgba(231, 52, 39, 1)
+    )
+    1;
+  border-radius: 20px;
+  /* left: 80px;
+top: 210px; */
+  padding: 48px 24px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-right:.5rem; */
+  margin-bottom: 0.5rem;
+  transition: transform 1500ms ease-in-out;
+  /* -webkit-backface-visibility: hidden; */
+  /* backface-visibility: hidden; */
+}
+
+.boxes:hover {
+  transform: rotateY(360deg);
+  background-color: black;
+  cursor: pointer;
+}
+
+.boxes:nth-child(3) {
+  margin-right: 0;
+}
+
+.topic {
+  font-family: JetBrains Mono;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  line-height: 74px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.content {
+  /* display: none; */
+  color: white;
+  font-family: JetBrains Mono;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (max-width: 550px) {
+  section {
+    margin: auto;
+  }
+  .first-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .boxes {
+    width: 84%;
+    margin-bottom: 0.5rem;
+  }
 }

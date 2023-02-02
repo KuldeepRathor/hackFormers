@@ -1,21 +1,17 @@
-import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
-import Schedule from "./components/Schedule/Schedule";
-import Prizes from "./components/Prizes/Prizes";
-import Sponsors from "./components/Sponsors/Sponsors";
-import Faq from "./components/Faq/Faq";
-import Tracks from "./components/Tracks/Tracks";
+import NavBar from "./components/NavBar/NavBar";
+import BgContainer from "./BgContainer/BgContainer";
+import HackFormers from "./pages/HackFormers";
+import { Route, Routes } from "react-router-dom";
+import Avalon from "./pages/Avalon";
 
 function App() {
   return (
     <div className="App">
-      <Hero></Hero>
-      <Tracks></Tracks>
-      <About></About>
-      <Schedule></Schedule>
-      <Prizes></Prizes>
-      <Sponsors></Sponsors>
-      <Faq></Faq>
+      <BgContainer></BgContainer>
+      <Routes>
+        <Route path="/" element={<Avalon />}></Route>
+        <Route path="/hackformers" element={<HackFormers />}></Route>
+      </Routes>
     </div>
   );
 }

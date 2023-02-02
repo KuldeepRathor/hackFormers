@@ -1,13 +1,139 @@
-.title_container{
-    display:flex;
-    align-items: center;
-    margin-top:1.5rem;
-    font-weight: 700;
-    text-shadow: 2.02971px 2.02971px 20.2971px rgba(255, 255, 255, 0.5);
-    font-family: 'JetBrains Mono', monospace;
-    text-transform: uppercase;
+:root {
+  --fs-normal: 24.3565px;
 }
-.title_container img{
-    height:3rem;
-    object-fit: cover;
+
+.h_container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_container {
+  display: flex;
+  margin-top: 1.9rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.hero_container img {
+  width: 50%;
+}
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  position: relative;
+  text-transform: capitalize;
+  background: rgba(7, 5, 7, 0.04);
+  z-index: 0;
+  border-radius: 10px;
+  margin-top: 2rem;
+  color: white;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.glow-on-hover:hover {
+  cursor: pointer;
+}
+
+.glow-on-hover:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  background: linear-gradient(92.09deg, #2064da 0.87%, #e73427 99.79%);
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: white;
+}
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(92.09deg, #2064da 0.87%, #e73427 99.79%);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.meta {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+  /* font-size: clamp(2rem,20vw+ 1rem,12rem); */
+  font-size: var(--fs-normal);
+  text-shadow: 2.02971px 2.02971px 20.2971px rgba(255, 255, 255, 0.5);
+  font-family: "JetBrains Mono";
+}
+.meta i {
+  margin-inline: 0.9rem;
+  color: gold;
+}
+.date i {
+  display: none;
+}
+
+@media only screen and (max-width: 840px) {
+  .hero_container img {
+    width: 100%;
+  }
+  .meta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.2rem;
+  }
+  .date i {
+    display: block;
+  }
+  .date,
+  .time,
+  .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .meta img {
+    display: none;
+  }
+  .glow-on-hover {
+    width: 50%;
+  }
 }
