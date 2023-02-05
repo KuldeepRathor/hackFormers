@@ -4,7 +4,7 @@ import "./Schedule.css";
 export default function Schedule() {
   return (
     <Card>
-      <div className="schedule_container">
+      <div className="schedule_container" id="schedule">
         <div className="title_container">
           <img src="src\assets\sword.png" alt="" />
           <h1>Agenda</h1>
