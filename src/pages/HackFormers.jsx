@@ -6,6 +6,7 @@ import Sponsors from "../components/Sponsors/Sponsors";
 import Faq from "../components/Faq/Faq";
 import Tracks from "../components/Tracks/Tracks";
 import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
 
 export default function HackFormers() {
   const links = [
@@ -27,6 +28,7 @@ export default function HackFormers() {
       <Schedule></Schedule>
       <Prizes></Prizes>
       <Faq></Faq>
+      <Footer></Footer>
     </>
   );
 }
