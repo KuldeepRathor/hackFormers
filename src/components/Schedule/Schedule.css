@@ -1,71 +1,88 @@
-h1{
-    color:white;
+h1 {
+  color: white;
 }
-.schedule_container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.schedule_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
 }
-.schedule_cont{
-   min-height: 100%;
-   width: 100%;
-   margin-left:.5rem;
-   font-family: JetBrains Mono;
+.schedule_cont {
+  min-height: 100%;
+  width: 100%;
+  margin-left: 0.5rem;
+  font-family: JetBrains Mono;
 }
-.P1{
-    width:100%;
-    height:80px;
-    padding-bottom:1px ;
-    display: flex;
+.P1 {
+  width: 100%;
+  height: 80px;
+  padding-bottom: 1px;
+  display: flex;
 }
-.P2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width:14.063rem;
-    height:80px;
-    float:left;
-    color:white;
-    border-right:3px solid white;
+.P2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 14.063rem;
+  height: 80px;
+  float: left;
+  color: white;
+  border-right: 3px solid white;
 }
-.P2 h2{
-    font-size: 1.563rem;
-    font-weight: 700;
+.P2 h2 {
+  font-size: 1.563rem;
+  font-weight: 700;
 }
-.P2 h4{
-    font-size: 1.313rem;
+.P2 h4 {
+  font-size: 1.313rem;
 }
-.P3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width:1210px;
-    height:80px;
-    /* float:right; */
-    color:white;
-    padding-right:3px;
-    margin-left:2.5rem;    
+.P3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 1210px;
+  height: 80px;
+  /* float:right; */
+  color: white;
+  padding-right: 3px;
+  margin-left: 2.5rem;
 }
-.P3 h3{
-    font-size: 1.563rem;
+.P3 h3 {
+  font-size: 1.563rem;
 }
-.P3 h6{
-    font-size: 1.046rem;
-    font-weight: bold;
-    color: #626060;
+.P3 h6 {
+  font-size: 1.046rem;
+  font-weight: bold;
+  color: #626060;
 }
-h4{
-    color: #2662D4;
+h4 {
+  color: #2662d4;
 }
-.agenda-title-component{
-    display: flex;
-    align-items: center;
-    font-size: xx-large;
+.agenda-title-component {
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
 }
-.agenda-title-component img{
-    margin-right: -1.063rem;
-    margin-left:-0.625rem;
+.agenda-title-component img {
+  margin-right: -1.063rem;
+  margin-left: -0.625rem;
 }
-hr{
-    border-top: dotted 1px;
+hr {
+  border-top: dotted 1px;
+}
+
+@media screen and (max-width: 800px) {
+  .schedule_container h3{
+    font-size: 1.3rem;
+  }
+  .schedule_container h4{
+    font-size: 1rem;
+  }
+
+  .schedule_container h2{
+    font-size: .9rem;
+  }
+  .P2{
+    padding-inline:1rem;
+  }
 }

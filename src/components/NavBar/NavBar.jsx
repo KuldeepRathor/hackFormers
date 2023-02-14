@@ -56,6 +56,22 @@ export default function NavBar({ links, logo }) {
                 </li>
               );
             }
+            if (link === "Prodigy") {
+              return (
+                <li className="nav_list_items" key={link}>
+                  <NavLink
+                    to={"/prodigy"}
+                    className="link"
+                    value={link}
+                    onClick={() => {
+                      hamburger === true ? onHamburger(false) : "";
+                    }}
+                  >
+                    {link}
+                  </NavLink>
+                </li>
+              );
+            }
             return (
               <li className="nav_list_items" key={link}>
                 <Link

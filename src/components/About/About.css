@@ -1,3 +1,23 @@
-h1{
-    color:white;
+.about_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+.about_content {
+  width: 90%;
+  margin-inline: auto;
+  color: white;
+}
+.about_content p {
+  line-height: 3;
+  font-size: 1.2rem;
+  font-family: JetBrains Mono;
+}
+@media screen and (max-width: 800px) {
+  .about_content p {
+    line-height: 3;
+    font-size: 1rem;
+    font-family: JetBrains Mono;
+  }
+}
+

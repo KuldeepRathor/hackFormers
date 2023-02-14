@@ -8,6 +8,7 @@
 .prizes_container {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 .prize_container {
   background: #000000;
@@ -107,4 +108,3 @@
   display: flex;
   align-items: center;
 }
-
