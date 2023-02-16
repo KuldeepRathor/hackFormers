@@ -1,12 +1,21 @@
 import React from "react";
+import discordimg from "../../assets/discord.png"
+import linkedinimg from "../../assets/linkedin.png"
+import instagramimg from "../../assets/insta.png"
 
 import "./Footer.css";
 function Footer() {
   return (
     <div className="footer_container">
-      <i className="fa fa-github" id="insta"></i>
-      <i className="devicon-linkedin-plain"></i>
-      <i className="fa fa-instagram" id="insta"></i>
+      <a href="/">
+      <img src={discordimg} alt="" />
+      </a>
+      <a href="/">
+      <img src={linkedinimg} alt="" />
+      </a>
+     <a href="/">
+      <i className="fa fa-instagram"></i>
+     </a>
     </div>
   );
 }
